@@ -5,7 +5,7 @@ stage('Compile Stage') {
 steps {
 withMaven(maven : 'maven',
           mavenSettingsConfig: 'my-maven-settings',
-        mavenLocalRepo: '.repository')){
+        mavenLocalRepo: '.repository'){
   sh 'mvn clean install'
     }
   }
